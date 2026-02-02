@@ -39,7 +39,7 @@ The system uses the **ESP32 DevKit v4**, a **TDS/EC sensor**, and a **DS18B20 te
 
 ---
 
-## 🛠️ Implementation
+##  Implementation
 
 ### Sensor Integration
 - Connect and test EC and temperature sensors
@@ -126,7 +126,7 @@ Real-time data can be accessed via the public ThingSpeak channel:
 
 ##  Visual Overview
 
-### 🧠 System Architecture
+###  System Architecture
 ![System Overview](docs/IoT-Based-Drinking-Water-Quality-Monitoring-with-ESP32.png)  
 > Complete overview of the AquaSense system using ESP32, EC and temperature sensors, OLED display, and cloud-based monitoring with ThingSpeak.
 
@@ -146,7 +146,7 @@ Real-time data can be accessed via the public ThingSpeak channel:
 
 ##  Sensor Accuracy & Limitations
 
-### ⚡ Sensor Error at Low Voltage Range (0–0.55 V)
+###  Sensor Error at Low Voltage Range (0–0.55 V)
 ![Error Start](docs/inizio.png)  
 > At low voltage levels, the sensor shows non-linear and less accurate readings — useful for detecting very pure water, but with a larger error margin.
 
