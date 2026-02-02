@@ -1,6 +1,6 @@
 # 💧 AquaSense – IoT Water Quality Monitoring System
 
-## 📌 Overview
+##  Overview
 
 **AquaSense** is a low-cost, DIY IoT system for real-time monitoring of **drinking water quality**, focusing on two key parameters:
 
@@ -11,7 +11,7 @@ The system uses the **ESP32 DevKit v4**, a **TDS/EC sensor**, and a **DS18B20 te
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 - Create a **dependable and cost-effective** solution to verify the potability of tap water.
 - Implement a **WiFi-connected monitoring system** with local display and remote logging.
@@ -19,7 +19,7 @@ The system uses the **ESP32 DevKit v4**, a **TDS/EC sensor**, and a **DS18B20 te
 
 ---
 
-## ⚙️ System Architecture
+##  System Architecture
 
 ### Hardware Components
 
@@ -39,7 +39,7 @@ The system uses the **ESP32 DevKit v4**, a **TDS/EC sensor**, and a **DS18B20 te
 
 ---
 
-## 🛠️ Implementation Plan
+## 🛠️ Implementation
 
 ### Sensor Integration
 - Connect and test EC and temperature sensors
@@ -55,7 +55,7 @@ The system uses the **ESP32 DevKit v4**, a **TDS/EC sensor**, and a **DS18B20 te
 
 ---
 
-## 📈 Results
+##  Results
 
 | Voltage | TDS (ppm) | Error (%) |
 |---------|-----------|-----------|
@@ -68,7 +68,7 @@ Graphs show acceptable sensor accuracy across the usable range, suitable for con
 
 ---
 
-## 🧪 Formula Summary
+##  Formula Summary
 
 **1. Temperature Compensation**  
 Compensate raw readings based on water temperature
@@ -81,7 +81,7 @@ Apply corrected formula to estimate ppm from voltage
 
 ---
 
-## 🌐 ThingSpeak Dashboard:
+##  ThingSpeak Dashboard:
 Real-time data can be accessed via the public ThingSpeak channel:
 
 [https://thingspeak.com](https://thingspeak.com)
@@ -114,7 +114,7 @@ Real-time data can be accessed via the public ThingSpeak channel:
 
 ---
 
-## 📌 Future Improvements
+##  Future Improvements
 
 - Add pH and turbidity sensors
 - Implement ML model to detect abnormal readings and suggest pipe maintenance
@@ -124,7 +124,7 @@ Real-time data can be accessed via the public ThingSpeak channel:
 ---
 
 
-## 📸 Visual Overview
+##  Visual Overview
 
 ### 🧠 System Architecture
 ![System Overview](docs/IoT-Based-Drinking-Water-Quality-Monitoring-with-ESP32.png)  
@@ -132,19 +132,19 @@ Real-time data can be accessed via the public ThingSpeak channel:
 
 ---
 
-### 🔧 Physical Setup
+###  Physical Setup
 ![Physical Setup](docs/soluz.png)  
 > Final working prototype on breadboard with ESP32, TDS sensor, DS18B20 temperature sensor, and OLED display.
 
 ---
 
-### 📟 ESP32 Pin Mapping
+###  ESP32 Pin Mapping
 ![Pin Mapping](docs/scheda%20tecnica%20pins.png)  
 > Pin configuration used to connect the sensors and display to the ESP32 board.
 
 ---
 
-## 📊 Sensor Accuracy & Limitations
+##  Sensor Accuracy & Limitations
 
 ### ⚡ Sensor Error at Low Voltage Range (0–0.55 V)
 ![Error Start](docs/inizio.png)  
@@ -152,21 +152,21 @@ Real-time data can be accessed via the public ThingSpeak channel:
 
 ---
 
-### 📉 General Accuracy Trend Across Full Range
+###  General Accuracy Trend Across Full Range
 ![Full Range](docs/generale.png)  
 > Graph showing overall accuracy and voltage-to-ppm mapping across the full TDS range, after ADC compensation.
 
 ---
 
-### ✅ Sensor Stability at High Voltage Range (3.0–3.3 V)
+###  Sensor Stability at High Voltage Range (3.0–3.3 V)
 ![Error End](docs/finale.png)  
 > In the optimal detection range (above 2.5V), the sensor behaves linearly and precisely — best suited for detecting contaminated or mineral-rich water.
 
 ---
 
-## ☁️ Remote Monitoring via ThingSpeak
+##  Remote Monitoring via ThingSpeak
 
-### 📡 Cloud-Based Visualization
+###  Cloud-Based Visualization
 ![ThingSpeak Overview](docs/ts.png)  
 > Real-time data sent from ESP32 to ThingSpeak every 2 seconds, including EC and temperature values.
 
@@ -175,21 +175,21 @@ Real-time data can be accessed via the public ThingSpeak channel:
 
 ---
 
-## 🧪 Sensor Details
+##  Sensor Details
 
-### 🚱 WHO-Based Toxicity Scale
+###  WHO-Based Toxicity Scale
 ![TDS Toxicity Scale](docs/TDS_Meter_Sensor-7B.png)  
 > Reference chart to classify water quality based on TDS (ppm) thresholds — ranging from ideal to unsafe.
 
 ---
 
-### ⚙️ Internal Sensor Components
+###  Internal Sensor Components
 ![Sensor Breakdown](docs/TDS_Meter_Sensor-7C.png)  
 > The EC/TDS sensor module includes a waterproof probe and a signal conditioning board (0–2.3V analog output).
 
 ---
 
-### 🌊 Probe Immersion During Calibration
+###  Probe Immersion During Calibration
 ![Probe in Water](docs/TDS_Meter_Sensor-7D.png)  
 > Waterproof TDS sensor immersed during calibration and testing phase with the ESP32 ADC.
 
@@ -198,17 +198,11 @@ Real-time data can be accessed via the public ThingSpeak channel:
 
 ---
 
-## 👤 Author
+## Me
 
 **Gianluca Giuseppe Maria De Nardi**  
 Double MSc in Artificial Intelligence & Embedded Systems  
 University of Udine & Alpen-Adria-Universität Klagenfurt  
 [LinkedIn](https://www.linkedin.com/in/gianluca-de-nardi/)
-
----
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
 
 
